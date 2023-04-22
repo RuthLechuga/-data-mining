@@ -1,0 +1,5 @@
+Zapatos, Calcetines, Camisa
+Zapatos, Pantalón, Camisa
+Zapatos, Camisa, Chumpa
+Calcetines, Chumpa, Mascarilla 
+Calcetines, Pantalón, Camisa, Chumpa, Mascarilla
