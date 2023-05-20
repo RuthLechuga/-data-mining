@@ -45,3 +45,20 @@ conjunto_elementos[conjunto_elementos['length']>1]
 conjunto_elementos[conjunto_elementos['itemsets']=={'Camisa','Zapatos,'}]
 
 conjunto_elementos[(conjunto_elementos['length']>2)&(conjunto_elementos['support']==0.4)]
+
+from mlxtend.frequent_patterns import fpgrowth
+
+conjunto_fpgrowth=fpgrowth(datos,min_support=0.6, use_colnames=True)
+conjunto_fpgrowth
+
+import timeit
+
+inicio=timeit.default_timer()
+for x in range(1):
+  variable = fpgrowth(datos, min_support=0.6, use_colnames=True)
+print(timeit.default_timer()-inicio)
+
+inicio=timeit.default_timer()
+for x in range(1):
+  variable = apriori(datos, min_support=0.6, use_colnames=True)
+print(timeit.default_timer()-inicio)
